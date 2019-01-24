@@ -19,7 +19,7 @@ namespace CFN_Bot
 
 		static void Main(string[] args)
 		{
-			var hostname = "cfnnewbot";
+			
 			new Program().RunBotAsync().GetAwaiter().GetResult();
 		}
 
@@ -30,6 +30,7 @@ namespace CFN_Bot
 
 		public async Task RunBotAsync()
 		{
+			var hostname = "cfnnewbot";
 			Client = new DiscordSocketClient();
 			Commands = new CommandService();
 			Services = new ServiceCollection()
